@@ -60,3 +60,4 @@ function maskMobileNumber(mobileNumber) {
 export {
   getFullName, days, submitFormArrayToString, maskMobileNumber,
 };
+
