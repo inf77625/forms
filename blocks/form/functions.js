@@ -69,8 +69,23 @@ function calcEmi(loan_amount, rate_of_interest, loan_tenure, tax_amount) {
   const emi = (P * r * pow) / (pow - 1);
   return Math.round(emi+T);
 }
+
+function getLoan(loanamount){
+  return loanamount;
+}
+function getTenure(tenure){
+  return tenure;
+}
+function getRoi(roi){
+  return roi;
+}
+function getEmi(emi){
+  return emi;
+}
+ 
+
 // eslint-disable-next-line import/prefer-default-export
 export {
-  getFullName, days, submitFormArrayToString, maskMobileNumber, calcEmi,
+  getFullName, days, submitFormArrayToString, maskMobileNumber, calcEmi, getLoan, getTenure, getRoi, getEmi,
 };
 
