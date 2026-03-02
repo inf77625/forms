@@ -59,15 +59,19 @@ function maskMobileNumber(mobileNumber) {
 function calcEmi(loan_amount, rate_of_interest, loan_tenure, tax_amount) {
   const P = Number(loan_amount || 0);
   const N = Number(loan_tenure || 0);
-  const r = Number(rate_of_interest || 0) / 1200;
-  const T = Number(tax_amount || 0)
+  const r = Number(rate_of_interest || 0) / 1200; // monthly rate in decimal
 
   if (!P || !N) return 0;
-  if (r === 0) return Math.round(P / N);
-
-  const pow = Math.pow(1 + r, N);
-  const emi = (P * r * pow) / (pow - 1);
-  return Math.round(emi+T);
+  let emi;
+  if (r === 0) {
+    emi = Math.round(P / N);
+  } else {
+    const pow = Math.pow(1 + r, N);
+    emi = (P * r * pow) / (pow - 1);
+    emi = Math.round(emi);
+  }
+  emi += Number(tax_amount || 0);
+  return emi;
 }
 
 function getLoan(loanamount){
