@@ -56,6 +56,41 @@ function maskMobileNumber(mobileNumber) {
   return ` ${'*'.repeat(5)}${value.substring(5)}`;
 }
 
+function calcEmi(loan_amount, rate_of_interest, loan_tenure, tax_amount) {
+  const P = Number(loan_amount || 0);
+  const N = Number(loan_tenure || 0);
+  const r = Number(rate_of_interest || 0) / 1200; // monthly rate in decimal
+
+  if (!P || !N) return 0;
+  let emi;
+  if (r === 0) {
+    emi = Math.round(P / N);
+  } else {
+    const pow = Math.pow(1 + r, N);
+    emi = (P * r * pow) / (pow - 1);
+    emi = Math.round(emi);
+  }
+  emi += Number(tax_amount || 0);
+  return emi;
+}
+
+function getLoan(loanamount){
+  return loanamount;
+}
+function getTenure(tenure){
+  return tenure;
+}
+function getRoi(roi){
+  return roi;
+}
+function getEmi(emi){
+  return emi;
+}
+function getTax(tax){
+  return tax;
+}
+ 
+
 // eslint-disable-next-line import/prefer-default-export
 export {
   getFullName, days, submitFormArrayToString, maskMobileNumber, calcEmi, getLoan, getTenure, getRoi, getEmi, getTax,
