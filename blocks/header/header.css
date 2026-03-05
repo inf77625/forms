@@ -1,3 +1,37 @@
+/* Custom header panel styles for HDFC and Secure badge */
+.field-header-panel {
+  background: #07123a;
+  display: flex;
+  width:100%;
+  align-items: center;
+  justify-content: space-between;
+  min-height: 100px;
+  margin: 0;
+  padding: 0;
+}
+.image-wrapper.field-form-image-hdfc-logo {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+.image-wrapper.field-form-image-hdfc-logo img {
+  height: 42px;
+  width: auto;
+  margin-left:60px;
+  max-width: 120px;
+}
+.image-wrapper.field-form-image-secure-badge {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  margin-left: auto;
+}
+.image-wrapper.field-form-image-secure-badge img {
+  height: 68px;
+  width: auto;
+  max-width: 90px;
+  margin-right: 60px;
+}
 /* header and nav layout */
 header .nav-wrapper {
   background-color: var(--background-color);
@@ -14,8 +48,8 @@ header nav {
     'sections sections sections' 1fr / auto 1fr auto;
   align-items: center;
   gap: 0 24px;
-  margin: auto;
-  max-width: 1248px;
+  margin: 0;
+  max-width: none;
   height: var(--nav-height);
   padding: 0 24px;
   font-family: var(--body-font-family);
@@ -266,3 +300,4 @@ header nav .nav-sections ul > li > ul > li {
 header nav .nav-tools {
   grid-area: tools;
 }
+

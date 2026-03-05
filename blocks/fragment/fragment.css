@@ -1,1 +1,7 @@
 /* stylelint-disable no-empty-source */
+.form .field-accordion-preview-page {
+    background-color: blue;
+    padding: 10px;
+    border: 1px solid #ccc;
+    margin-bottom: 10px;
+}

@@ -58,6 +58,55 @@ function maskMobileNumber(mobileNumber) {
 
 // eslint-disable-next-line import/prefer-default-export
 export {
-  getFullName, days, submitFormArrayToString, maskMobileNumber,
+  getFullName, days, submitFormArrayToString, maskMobileNumber, calcEmi, getLoan, getTenure, getRoi, getEmi, getTax,
 };
 
+
+function calcEmi(loan_amount, rate_of_interest, loan_tenure, tax_amount) {
+  void tax_amount;
+  const P = Number(loan_amount || 0);
+  const N = Number(loan_tenure || 0);
+  const rateValue = typeof rate_of_interest === 'string' ? rate_of_interest.replace('%', '') : rate_of_interest;
+  const r = Number(rateValue || 0) / 1200; // monthly rate in decimal
+
+  if (!P || !N || Number.isNaN(r)) return 0;
+  let emi;
+  if (r === 0) {
+    emi = Math.round(P / N);
+  } else {
+    const pow = Math.pow(1 + r, N);
+    emi = (P * r * pow) / (pow - 1);
+    emi = Math.round(emi);
+  }
+  return emi;
+}
+
+function getLoan(loanamount, taxamount = 0){
+  if (loanamount === null || loanamount === undefined || loanamount === '') {
+    return '';
+  }
+
+  const loanValue = Number(loanamount);
+  const taxValue = Number(taxamount || 0);
+
+  if (Number.isNaN(loanValue)) {
+    return '';
+  }
+
+  const totalLoanAmount = loanValue + (Number.isNaN(taxValue) ? 0 : taxValue);
+  return `₹${totalLoanAmount}`;
+}
+function getTenure(tenure){
+
+  return tenure;
+}
+function getRoi(roi){
+ 
+  return roi;
+}
+function getEmi(emi){
+  return `₹${emi}`;
+}
+function getTax(tax){
+  return `₹${tax}`;
+}

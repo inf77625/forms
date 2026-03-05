@@ -1,9 +1,191 @@
+/* thank you page styling cards */
+.panel-wrapper.field-side-offers {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    background: none;
+    box-shadow: none;
+    border: none;
+}
+
+.field-recurring-deposit-offer,
+.field-health-insurance-offer {
+    background: #f7f3fd;
+    border-radius: 16px;
+    box-shadow: 0 2px 8px 0 rgba(44, 62, 80, 0.08);
+    padding: 28px 20px 20px 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    min-height: 160px;
+}
+
+.field-recurring-deposit-offer p,
+.field-health-insurance-offer p {
+    margin: 0;
+    color: #222;
+    font-size: 16px;
+}
+.field-recurring-deposit-offer b,
+.field-health-insurance-offer b {
+    color: #222;
+    font-size: 15px;
+    font-weight: 600;
+}
+.field-recurring-deposit-offer br,
+.field-health-insurance-offer br {
+    display: block;
+    margin-bottom: 4px;
+}
+/* thank you page loan summary Styling */
+.panel-wrapper.field-loan-application-summary {
+    background: #fff;
+    border-radius: 16px;
+    box-shadow: 0 2px 8px 0 rgba(44, 62, 80, 0.08);
+    padding: 32px 32px 24px 32px;
+    margin: 24px 0;
+    border: none;
+}
+.field-kyc-notification{
+    background: #fffbe8;
+    border-radius: 12px;
+    border: 2px solid #ffd700;
+    padding: 2px 24px;
+    color: #222; 
+}
+
+.panel-wrapper.field-loan-application-number-panel {
+    background: #fff;
+    border-radius: 16px;
+    box-shadow: 0 2px 8px 0 rgba(44, 62, 80, 0.08);
+    padding: 24px 32px 16px 32px;
+    margin-bottom: 16px;
+    border: none;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.field-loan-application-number-label p {
+    color: #8a94a6 !important;
+    font-size: 15px !important;
+    margin: 0 0 4px 0 !important;
+}
+.field-loan-application-number-value b {
+    color: #222;
+    font-size: 28px;
+    font-weight: 700;
+    letter-spacing: 1px;
+}
+.field-contact-note p {
+    color: #8a94a6;
+    font-size: 14px;
+    margin: 0;
+}
+
+.panel-wrapper.field-xpress-loan-summary-panel {
+    background: #fff;
+    border-radius: 16px;
+    box-shadow: 0 2px 8px 0 rgba(44, 62, 80, 0.08);
+    padding: 24px 32px 16px 32px;
+    margin-bottom: 16px;
+    border: none;
+}
+.field-xpress-loan-summary-title p {
+    color: #222;
+    font-size: 18px;
+    font-weight: 600;
+    margin: 0 0 16px 0;
+}
+.field-loan-amount-label p {
+    color: #8a94a6 !important;
+    font-size: 13px !important;
+    margin: 0 0 2px 0 !important;
+}
+.field-loan-amount-value b {
+    color: #222;
+    font-size: 20px !important;
+    font-weight: 500 !important;
+    margin: 0;
+}
+.field-loan-disbursal-note{
+    background: linear-gradient(90deg, #f5fdfe, #bcc6fe);
+    border-radius: 10px;
+}
+.field-loan-disbursal-note p p{
+    font-size: 14px !important;
+    padding-left: 10px !important;
+    color: blue !important;
+}
+.field-easy-loan-management-title {
+  display: flex;
+  align-items: center;
+  background: linear-gradient(90deg, #eaf1fb 0%, #dbe7fd 100%);
+  border-radius: 20px 20px 0 0;
+  padding: 18px 24px 12px 24px;
+  font-size: 1.25rem;
+  font-weight: 600;
+  color: #1a237e;
+  gap: 12px;
+  margin-bottom: 0 !important;
+}
+.field-mobile-banking-app-note {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: #fff;
+  border-radius: 0 0 20px 20px;
+  padding: 12px 24px 18px 24px;
+  font-size: 1rem;
+  color: #212121;
+  box-shadow: 0 1px 4px rgba(0,0,0,0.04);
+  margin-top: -9px !important;
+}
+.field-mobile-banking-app-note a {
+  color: #1746e0;
+  font-weight: 500;
+  text-decoration: underline;
+}
+.field-mobile-banking-app-note .arrow {
+  color: #1746e0;
+  font-size: 1.5rem;
+  margin-left: 8px;
+}
+
+/* end of thank you page loan summary Styling */
+
+.form .field-header-panel .image-wrapper.field-form-image-hdfc-logo,
+.form .field-header-panel .image-wrapper.field-form-image-secure-badge,
+.form .field-header-panel picture.image-wrapper.field-form-image-hdfc-logo,
+.form .field-header-panel picture.image-wrapper.field-form-image-secure-badge {
+    display: flex;
+    align-items: center;
+}
+
+.form .field-header-panel picture.image-wrapper.field-form-image-hdfc-logo {
+    justify-content: flex-start;
+}
+.form .field-header-panel picture.image-wrapper.field-form-image-secure-badge {
+    justify-content: flex-end;
+    margin-left: auto;
+    margin-right: 0;
+}
+.form .field-header-panel picture.image-wrapper.field-form-image-hdfc-logo img {
+    width: auto;
+    max-width: 120px;
+    margin-left: 16px;
+}
+.form .field-header-panel picture.image-wrapper.field-form-image-secure-badge img {
+    height: 28px;
+    width: auto;
+    max-width: 90px;
+}
 :root {
     --background-color-primary: #fff;
     --label-color: #666;
     --border-color: #818a91;
     --form-error-color: #ff5f3f;
-    --button-primary-color: rgb(248, 27, 200);
+    --button-primary-color: lightblue;
     --button-secondary-color: #666;
     --button-primary-hover-color: #035fe6;
     --form-font-size-m: 22px;
@@ -255,12 +437,9 @@ main .form form .field-wrapper {
 
 main .form form .field-wrapper label{
     font-weight: 1200px;
-    color:lightgreen;
 }
 
-main .form form .text-wrapper > input {
-border: 1px solid #ff00f2;
-}
+
 main .form form .field-mobile-number > label {
 color: #a600ff;
 }
@@ -806,7 +985,379 @@ main div.form-wrapper {
     }
 }
 
-/* Expand height for multi-select dropdowns (array types) */
+
 main .form form select[multiple] {
     height: calc(42px + 50px);
 }
+
+
+/*styling for header with logo and secure badge on right*/
+.form .field-header-panel{
+    margin-bottom: 10px;
+    background-color: #07123a;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 8px 16px;
+    min-height: 48px;
+}
+
+.form .field-header-panel .image-wrapper.field-form-image-hdfc-logo {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.form .field-header-panel .image-wrapper.field-form-image-hdfc-logo img {
+    width: auto;
+    max-width: 120px;
+    margin-left: 16px;
+}
+
+.form .field-header-panel .image-wrapper.field-form-image-secure-badge {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    margin-left: auto;
+    margin-right: -280px;
+}
+
+.form .field-header-panel .image-wrapper.field-form-image-secure-badge img {
+    height: 28px;
+    width: auto;
+    max-width: 90px;
+}
+
+/* Accordion styling for loan summary on thank you page */
+.form .field-accordion-preview-page {
+    background: #eaf1fb;
+    border-radius: 16px;
+    box-shadow: 0 2px 8px 0 rgba(44, 62, 80, 0.08);
+    margin-bottom: 24px;
+    border: none;
+}
+.form .field-accordion-preview-page .field-loan-details-panel .field-personal-details-panel{
+    background: #fff;
+    padding: 24px 24px 16px 24px;
+    border-radius: 0 0 16px 16px;
+    box-shadow: 0 2px 8px 0 rgba(44, 62, 80, 0.08);
+    border: none;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 24px 0;
+    font-family: 'Inter', Arial, sans-serif;
+}
+.form .field-loan-details-panel .accordion-legend,
+.form .field-personal-details-panel .accordion-legend{
+    background: linear-gradient(90deg, #eaf1fb 0%, #6eb0f1 100%);
+    border-radius: 8px;
+}
+.form .panel-wrapper .accordion-legend{
+    font-weight: 1200px;
+    color:darkblue;
+}
+.field-loan-amount, .field-tenure, .field-processing-fee, .field-employer-name, .field-schedule-of-charges, .field-type-of-loan, .field-full-name, .field-mobile-number, .field-pan, .field-date-of-birth, .field-current-address, .field-residence-type{
+    border-left: 4px solid skyblue;
+    border-radius: 4px;
+}
+.field-review-details-instructions{
+   padding-top: 20px !important;
+}
+/* End of Accordion styling for loan summary on thank you page */
+
+/*styling for welcome page */
+
+.form .field-identification-method{
+   justify-content: center;
+}
+main .form form .text-wrapper > input,
+main .form form .date-wrapper > input {
+border: 1px solid black;
+border-radius: 12px;
+}
+.field-income-proof-text {
+    display: block;
+    margin: 0px 0 0px 650px !important;
+    padding: 8px 14px;
+    border: 2px solid #ffd700;
+    border-radius: 12px;
+    background: #fffbe8;
+    color: #222;
+    font-size: 20px;
+    box-shadow: 0 2px 8px 0 rgba(44, 62, 80, 0.04);
+    max-width: 500px;
+    width: 100%;
+    align-self: flex-end;
+}
+  .button-wrapper .button {
+        background: #1976d2;
+        color: #fff;
+        border: none;
+        border-radius: 8px;
+        font-size: 18px;
+        font-weight: 600;
+        padding: 12px 32px;
+        cursor: pointer;
+        transition: background 0.2s;
+    }
+   
+    .button-wrapper .button:not(:disabled):hover {
+            background: linear-gradient(90deg, #1976d2 0%, #00c6ff 100%);
+            
+        }
+    .button-wrapper .button:disabled {
+        background: #e3f2fd;
+        color: #90caf9;
+        cursor: not-allowed;
+    }
+    
+    /*otp styling*/
+    .field-otp-verification-panel{
+        padding-top: 30px !important;
+    }
+    .field-otp-instructions {
+    font-size: 18px;
+    color: #222;
+    margin-bottom: 8px;
+}
+.field-otp-instructions p {
+    font-weight: 600;
+    line-height: 14px;
+    text-decoration: none;
+}
+.field-otp-input {
+    margin-top: 12px;
+    margin-bottom: 24px;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+.field-otp-input input[type="text"] {
+    border: 1.5px solid #dbe2ee;
+    border-radius: 12px;
+    background: #fff;
+    font-size: 24px;
+    letter-spacing: 24px;
+    padding: 12px 24px;
+    width: 100%;
+    max-width: 420px;
+    color: #222;
+    outline: none;
+    box-shadow: 0 2px 8px 0 rgba(44, 62, 80, 0.04);
+}
+.field-otp-input input[type="text"]:focus {
+    border-color: #1976d2;
+}
+.field-otp-input .otp-meta {
+    display: flex;
+    justify-content: space-between;
+    font-size: 15px;
+    color: #8a94a6;
+    margin-top: 4px;
+}
+.field-otp-input .otp-meta strong {
+    color: #222;
+}
+.field-resend-otp-timer p,
+.field-otp-attempts-left p {
+    font-size: 14px !important;
+    color: #8a94a6;
+    margin-top: -30px !important;
+}
+
+/*styling for offers pages*/
+.field-offer-title{
+    font-size: 24px;
+    font-weight: 600;
+    color: #222;
+    padding-top: 30px;
+    margin-bottom: 16px;
+}
+
+.field-offer-title p::before {
+  content: "🎉";
+  display: inline-block;
+  font-size: 1.3em;
+  vertical-align: middle;
+  padding-bottom: 8px;
+}
+.field-offer-highlight-text{
+    font-size: 18px;
+    font-weight: 500;
+    color: #1976d2;
+}
+/* Offer emi amount Styling */
+.field-offer-highlight-text {
+    background: #eafdff;
+    border-radius: 32px;
+    display: flex;
+    align-items: center;
+    gap: 32px;
+    padding: 32px 48px;
+    margin: 24px 0;
+    min-height: 120px;
+    box-sizing: border-box;
+}
+.field-offer-highlight-text p, .field-offer-highlight-text .offer-title {
+    color: #181f2b;
+    font-size: 2rem;
+    font-weight: 700;
+    margin: 0;
+    text-align: left;
+}
+.field-loan-offer-details{
+
+    background: #fdf7e6;
+    border-radius: 28px;
+    padding: 40px 36px 0 36px !important;
+    margin: 24px 0;
+    box-sizing: border-box;
+    box-shadow: 0 2px 8px 0 rgba(44, 62, 80, 0.04);
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    position: relative;
+}
+
+.field-xpress-loan-title{
+
+    color: #181f2b;
+    font-size: 2rem;
+    font-weight: 700;
+    margin-bottom: 0.5rem;
+}
+.field-emi-amount, .field-tax-amount{
+
+    color: #181f2b;
+    font-size: 1.25rem;
+    font-weight: 600;
+    margin-bottom: 0.5rem;
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    border-left: 4px solid #ffb43a;
+    padding-left: 12px;
+}
+
+.field-rate-of-interest{
+
+    color: #181f2b;
+    font-size: 1.25rem;
+    font-weight: 600;
+    margin-bottom: 0.5rem;
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    border-left: 4px solid #ffb43a;
+    padding-left: 12px;
+}
+
+.field-taxes{
+
+    color: #181f2b;
+    font-size: 1.25rem;
+    font-weight: 600;
+    margin-bottom: 0.5rem;
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    border-left: 4px solid #ffb43a;
+    padding-left: 12px;
+}
+
+.field-principal-offer-note{
+    
+    background: #ffa726;
+    color: #fff;
+    font-size: 1.1rem;
+    border-radius: 0 0 28px 28px;
+    padding: 24px 36px !important;
+    margin: 0 -36px !important;
+    display: flex;
+    align-items: flex-start;
+    gap: 12px;
+    font-weight: 500;
+    min-height: 60px;
+    box-sizing: border-box;
+}
+.field-rate-of-interest .field-description p {
+    font-size: 14px;
+    color: #8a94a6;
+    margin: 2px 0 0 0;
+    line-height: 1.4;
+}
+
+.field-rate-of-interest {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.field-rate-of-interest .field-label {
+    margin-bottom: 4px;
+}
+
+.field-rate-of-interest input[type="text"],
+.field-rate-of-interest input[type="number"] {
+    margin-top: 2px;
+    margin-bottom: 2px;
+}
+
+.field-rate-of-interest .field-description {
+    order: 3;
+    width: 100%;
+    margin-top: 6px;
+}            
+.field-loan-amount-prev input[type="text"],
+.field-emi-amount-prev input[type="text"],
+.field-loan-tenure-prev input[type="text"], 
+.field-rate-of-interest-prev input[type="text"],
+.field-tax-fee input[type="text"]{
+    background-color: #eaf1fb !important;
+    border: none !important;
+    color: #666 !important;
+    font-size: 18px !important;
+    padding: 12px 0px !important;
+    border-radius: 8px !important;
+    margin-top: -9px !important;
+}
+.field-loan-amount-final input[type="text"]{
+     border: none !important;
+    color: #222 !important;
+    border-radius: 8px !important;
+    font-size: 40px !important;
+}
+.field-avail-loan-amount input[type="text"]{
+     border: none !important;
+    color: #222 !important;
+    background: #fdf7e6 !important;
+    padding: 12px 0px !important;
+    margin-top: -18px !important;
+    border-radius: 8px !important;
+    font-size: 40px !important; 
+}
+
+.field-emi-amount input[type="text"]{
+     border: none !important;
+    color: #222 !important;
+    font-size: 30px !important;
+    background: #fdf7e6 !important;
+}
+.field-loan-amount-prev .field-label,
+.field-emi-amount-prev .field-label,
+.field-loan-tenure-prev .field-label,
+.field-rate-of-interest-prev .field-label,
+.field-tax-fee .field-label{
+    font-size:18px !important;
+    font-weight: 700 !important;
+    color: #666 !important;
+}
+.field-loan-amount-prev ,
+.field-emi-amount-prev ,
+.field-loan-tenure-prev ,
+.field-rate-of-interest-prev,
+.field-tax-fee {
+    border-left: 4px solid skyblue !important;
+    border-radius: 4px !important;
+}
+

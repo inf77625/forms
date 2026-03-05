@@ -1,9 +1,10 @@
 {
   "mappings": [
-    "/:/"
+    "/content/venkat-hdfc/:/"
   ],
   "includes": [
-    "/content/",
-    "/content/dam/"
+    "/content/venkat-hdfc",
+    "/content/dam/",
+    "/content/forms"
   ]
 }
