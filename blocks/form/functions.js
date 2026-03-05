@@ -86,10 +86,13 @@ function getRoi(roi){
 function getEmi(emi){
   return emi;
 }
+function getTax(tax){
+  return tax;
+}
  
 
 // eslint-disable-next-line import/prefer-default-export
 export {
-  getFullName, days, submitFormArrayToString, maskMobileNumber, calcEmi, getLoan, getTenure, getRoi, getEmi,
+  getFullName, days, submitFormArrayToString, maskMobileNumber, calcEmi, getLoan, getTenure, getRoi, getEmi, getTax,
 };
 
